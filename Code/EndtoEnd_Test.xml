@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AP55 and 68 Test scripts" parallel="tests"
+	thread-count="1">
+
+    <test name="Opportunity Request Process - Normal" preserve-order="true" enabled="true">
+    	<parameter name="inputsheetname" value="RequestData"></parameter>
+    	<classes>
+    		<class name="com.serviceNow.testcases.EndtoEnd_OpportunisticRequestProcess_Normal">
+    			<methods>
+					<include name="UserLoginAsRequestor"/>
+    				<include name="VerificationOfSubmitButton"/>
+    				<include name="PopulateMandatoryAndNotMandatoryFields"/>
+    				<include name="PopulateContractingInvoicingTable"/>
+    				<include name="PopulateWorkLocationsTable"/>
+    				<include name="PopulateContractorSubcontractorTable"/>
+    				<include name="VerificationofAttachmentIcon"/>
+					<include name="VerificationWhenSubmitIsSelected"/>							
+    				<include name="UserLoginAsFulfiller"/>
+    				<include name="VerificationOfCreatedReadyRequestFulfillerView"/> 
+    				<include name="VerificationofAttachedFilefromRequestForminFulfiller"/> 	
+    				<include name="generateP68ReviewTask"/>	
+    				<include name="generateP55ReviewTask"/>	    						
+    				<include name="verifyP68ReviewTask"/>
+    				<include name="verifyP68Activitylog"/>
+    				<include name="VerifyAttachmentFunctioninCFReview"/>
+       				<include name="setP68ReviewStatustoApproved"/>
+       				<include name="AttachmentsandConditionsExtractedinReviewStatusView"/>
+       				<include name="verifyP55ReviewTask"/>
+    				<include name="verifyP55Activitylog"/>
+    				<include name="setP55ReviewStatustoApproved"/>
+    				<include name="NotificationstoTravelerwhenReviewisApproved"/>
+    				<include name="NavigateToAllPolicyReviewTask"/>
+    				<include name="VerifyOpportunityRequestConditionsViewRelatedList"/>
+    				<include name="VerifyAP55ReviewTasksApprovedCompletedNotificationsReceivedByOppDirector"/>
+    				<include name="closedComplete"/>
+    			</methods>
+    		</class>
+    	</classes>
+    </test>
+</suite> 

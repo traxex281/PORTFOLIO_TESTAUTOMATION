@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- TestNG Suite for Automated Testing -->
+<suite name="Sanitized Test Suite" parallel="tests" thread-count="1">
+    <parameter name="inputsheetname" value="sanitized_input.xlsx" />
+    
+    <test name="Validate Flow 1" preserve-order="true" enabled="false">
+        <parameter name="testcaseName" value="Validate Flow 1 - Scenario A" />
+        <classes>
+            <class name="com.automation.testcases.SanitizedTest">
+                <methods>
+                    <parameter name="scenarioName" value="Scenario_A"/>
+                    <include name="initiateTestData"/>
+                    <include name="createRecord"/>
+                    <include name="retrieveGeneratedID"/>
+                    <include name="openRecordFormView"/>
+                    <include name="validateRecordStatus"/>
+                    <include name="updateRecord"/>
+                    <include name="validateTaskStatus"/>
+                    <include name="checkFieldEditability"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Validate Flow 2" preserve-order="true" enabled="false">
+        <parameter name="testcaseName" value="Validate Flow 2 - Scenario B" />
+        <classes>
+            <class name="com.automation.testcases.SanitizedTest">
+                <methods>
+                    <parameter name="scenarioName" value="Scenario_B"/>
+                    <include name="initiateTestData"/>
+                    <include name="createRecord"/>
+                    <include name="retrieveGeneratedID"/>
+                    <include name="openRecordFormView"/>
+                    <include name="validateRecordStatus"/>
+                    <include name="updateRecord"/>
+                    <include name="validateTaskStatus"/>
+                    <include name="checkFieldEditability"/>
+                    <exclude name="validateCancelledStatus"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Validate Flow 3" preserve-order="true" enabled="true">
+        <parameter name="testcaseName" value="Validate Flow 3 - Scenario C" />
+        <classes>
+            <class name="com.automation.testcases.SanitizedTest">
+                <methods>
+                    <parameter name="scenarioName" value="Scenario_C"/>
+                    <include name="initiateTestData"/>
+                    <include name="createRecord"/>
+                    <include name="retrieveGeneratedID"/>
+                    <include name="openRecordFormView"/>
+                    <include name="validateRecordStatus"/>
+                    <include name="updateRecord"/>
+                    <include name="validateTaskStatus"/>
+                    <include name="checkFieldEditability"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
