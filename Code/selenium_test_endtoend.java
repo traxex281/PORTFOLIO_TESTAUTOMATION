@@ -40,9 +40,9 @@ public class EndtoEnd_OpportunisticRequestProcess_Normal extends CommonTest {
 	public String FulfillerEID;
 	public String Password;
 	public String AdsPassword;
-	public String requestid1 = "CCCB0003807";
-	public String requestid2 = "CCCB0003796";
-	public String requestid3 = "CCCB0003763";
+	public String requestid1 = "";
+	public String requestid2 = "";
+	public String requestid3 = "";
 	public String testName = "Opportunity Request Process - Normal"; 
 	public String currentWindow;
 	
