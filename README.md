@@ -11,17 +11,19 @@ This repository showcases my test automation projects for **ServiceNow applicati
 ## 📂 Test Automation Reports  
 These logs and reports demonstrate the effectiveness of my test automation in ServiceNow environments.  
 
-🔹 [Azure Release Test Logs](logs/azure_release_test_logs.txt)  
-🔹 [Pipeline Execution Summary](logs/pipeline_execution_summary.log)  
+🔹 [Azure Release Pipeline Summary](Logs/AzureReleasePipeline_Logs.png)  
+🔹 [Azure Release_Pipeline Execution Logs](Logs/EndtoEnd_Test_Report.zip)  
+🔹 [Azure Release_Pipeline Execution Tasks](Logs/RelasePipeline_Tasks.png)  
 
 ---
 
 ## 📝 Sample Test Scripts  
 Here are sample automation scripts used for **ServiceNow functional and regression testing**.  
 
-🔹 [Selenium Test Script for ServiceNow](code_samples/servicenow_selenium_test.java)  
-🔹 [ServiceNow API Automation](code_samples/servicenow_api_test.xml)  
-🔹 [Azure DevOps Pipeline TASKS for Test Execution](code_samples/azure_pipeline.yml)  
+🔹 [ServiceNow EndtoEnd_Automation_Selenium_Test_Script](Code/selenium_test_endtoend.java)  
+🔹 [ServiceNow EndtoEndwithAPI_Automation_Selenium_Test_Script](Code/selenium_test_endtoendwithAPI.java)  
+🔹 [ServiceNow EndtoEnd_Automation](Code/EndtoEnd_Test.xml)  
+🔹 [ServiceNow EndtoEndwithAPI_Automation](Code/EndtoEnd_API_Test.xml)  
 
 ---
 
